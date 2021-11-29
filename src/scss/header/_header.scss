@@ -1,0 +1,75 @@
+.header {
+  $root: &;
+  padding: 28px 0;
+
+  &__logo {
+    max-height: 38px;
+    width: auto;
+  }
+
+  &__help {
+    line-height: 32px;
+  }
+
+  &__notify {
+    display: flex;
+    margin: 0 26px;
+  }
+
+  &__cart {
+    background-color: #f5f5f5;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+
+    i {
+      font-size: 12px;
+      color: #a0a0a0;
+    }
+  }
+
+  &__item-number {
+    width: 18px;
+    height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $red;
+    border-radius: 50%;
+    position: absolute;
+    color: #fff;
+    font-size: 11px;
+    right: -8px;
+    top: -8px;
+  }
+
+  &__actions {
+    display: flex;
+    margin: 0 -4px;
+
+    #{$root} {
+      &__btn {
+        width: 72px;
+        height: 32px;
+        line-height: 32px;
+        text-align: center;
+        color: #fff;
+        font-size: 12px;
+        border-radius: 4px;
+        margin: 0 4px;
+
+        &--login {
+          background-color: $green;
+        }
+        &--register {
+          background-color: $red;
+        }
+      }
+    }
+  }
+}

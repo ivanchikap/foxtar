@@ -1,0 +1,97 @@
+.welcome {
+  background: url("../img/banner_image.jpg") no-repeat center / cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 60px - 97px);
+
+  @include mobile-large {
+    height: 534px;
+  }
+
+  @include mobile {
+    height: 400px;
+  }
+
+  &__container {
+    max-width: 760px;
+    padding: 0 30px;
+
+    @include mobile {
+      padding: 0 10px;
+    }
+  }
+
+  &__title {
+    color: #ffffff;
+    font-size: 48px;
+    font-weight: 700;
+
+    @include mobile-large {
+      font-size: 42px;
+      line-height: 1.2;
+    }
+
+    @include mobile {
+      font-size: 32px;
+    }
+  }
+
+  &__subtitle {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 34px 0 54px 0;
+
+    @include mobile-large {
+      font-size: 18px;
+      line-height: 1.2;
+      margin: 30px 0 40px 0;
+    }
+
+    @include mobile {
+      font-size: 16px;
+    }
+  }
+
+  &__form {
+    i {
+      position: absolute;
+      right: 4%;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 20px;
+      color: #78909c;
+    }
+  }
+
+  &__input {
+    width: 100%;
+    max-width: 670px;
+    height: 56px;
+    box-shadow: 0 1px 10px rgba(124, 178, 64, 0.75);
+    background-color: #ffffff;
+    color: #90a4ae;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 56px;
+    letter-spacing: 0.7px;
+    padding: 20px 25px;
+    border-radius: 6px;
+
+    &::placeholder {
+      color: #90a4ae;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 56px;
+      letter-spacing: 0.7px;
+    }
+
+    @include mobile-large {
+      padding: 15px 20px;
+      height: 46px;
+      line-height: 46px;
+    }
+  }
+
+}
