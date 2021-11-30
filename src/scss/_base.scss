@@ -13,6 +13,21 @@ header {
   }
 }
 
+.title {
+  color: #263238;
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+
+  @include mobile-large {
+    font-size: 30px;
+  }
+
+  @include mobile {
+    font-size: 28px;
+  }
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
 }
@@ -29,6 +44,9 @@ h1, h2, h3, h4, h5, h6 {
 .container-fluid {
   width: 100%;
   padding: 0 15px;
+  @include mobile {
+    padding: 0 10px;
+  }
 }
 
 .container {

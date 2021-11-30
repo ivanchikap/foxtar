@@ -14,8 +14,12 @@
   }
 
   &__container {
-    max-width: 760px;
+    max-width: 800px;
     padding: 0 30px;
+
+    @include tablet {
+      padding: 0 15px;
+    }
 
     @include mobile {
       padding: 0 10px;
@@ -26,6 +30,10 @@
     color: #ffffff;
     font-size: 48px;
     font-weight: 700;
+
+    @include tablet {
+      font-size: 44px;
+    }
 
     @include mobile-large {
       font-size: 42px;
