@@ -1,0 +1,32 @@
+.user-drop-down {
+  display: none;
+  position: absolute;
+  top: 92px;
+  left: 0;
+  width: 158px;
+  background-color: #fff;
+  padding: 16px 0;
+  z-index: 10;
+  box-shadow: 0 16px 20px rgba(216, 216, 216, 0.75);
+  border: 1px solid #cccccc;
+
+  &__item {
+    padding: 12px 20px;
+    transition: color .3s ease;
+    font-size: 12px;
+
+    &::before {
+      content: '\f105';
+      color: $green;
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      margin-right: 8px;
+      font-size: 14px;
+    }
+
+    &:hover {
+      color: $green;
+    }
+  }
+}
+
