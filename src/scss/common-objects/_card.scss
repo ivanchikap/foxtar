@@ -27,6 +27,15 @@
   &__info-top {
     border-bottom: 1px solid #e7ecf2;
     padding: 28px 30px 16px 30px;
+
+    @include laptop {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    @include mobile {
+      padding: 10px 20px 6px 20px;
+    }
   }
 
   &__name {
@@ -57,11 +66,17 @@
 
   &__info-bottom {
     padding: 16px 30px 20px 30px;
+
+    @include laptop {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    @include mobile {
+      padding: 10px 20px 10px 20px;
+    }
+
   }
-
-  &__author-wrapper {}
-
-
 
   &__author-avatar {
     width: 30px;

@@ -3,12 +3,27 @@ $(function() {
 
     // $("#portfolio__tabs").tabs();
 
-    // $('#owl-carousel').owlCarousel({
-    //     loop:true,
-    //     items:1,
-    //     nav: true,
-    //     dots: true
-    // });
+    $('#owl-carousel').owlCarousel({
+        loop:true,
+        items:4,
+        nav: false,
+        dots: true,
+        margin: 15,
+        responsive: {
+            1200: {
+                items: 4
+            },
+            960: {
+                items: 3
+            },
+            720: {
+                items: 2
+            },
+            0: {
+                items: 1
+            }
+        }
+    });
 });
 
 
