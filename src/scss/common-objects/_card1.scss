@@ -20,7 +20,7 @@
     height: 113px;
     border-radius: 50%;
     overflow: hidden;
-    margin: 0 auto;
+    margin: 32px auto;
     transition: all .3s ease-in;
 
     img {
@@ -35,8 +35,9 @@
     font-size: 24px;
     font-weight: 500;
     transition: all .3s ease-in;
-    margin: 32px 0 26px 0;
+    margin-bottom: 26px;
   }
+
   &__desc {
     line-height: 24px;
   }

@@ -23,7 +23,9 @@
     position: relative;
 
     &:hover {
-      .cart-drop-down {
+      .cart-drop-down,
+      .mail-drop-down,
+      .notify-drop-down {
         display: block;
       }
     }
