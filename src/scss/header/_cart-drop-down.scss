@@ -1,3 +1,19 @@
+.header {
+  &--user {
+    .cart-drop-down {
+
+      @include mobile-large {
+        right: auto;
+        left: 0;
+        top: 50px;
+      }
+      @include mobile {
+        width: 100%;
+      }
+    }
+  }
+}
+
 .cart-drop-down {
   display: none;
   position: absolute;
@@ -10,6 +26,12 @@
   box-shadow: 0 16px 20px rgba(216, 216, 216, 0.75);
   border: 1px solid #cccccc;
 
+
+  @include mobile {
+    width: 100%;
+    top: 48px;
+    left: 0;
+  }
 
   &__list-item {
     display: flex;

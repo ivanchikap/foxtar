@@ -2,6 +2,98 @@
   $root: &;
   height: 92px;
 
+  @include mobile {
+    height: auto;
+  }
+
+  &__mob-wrap {
+
+    @include mobile {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      padding: 0 15px;
+      align-items: center;
+    }
+
+
+    #{$root}__mob-logout {
+      display: none;
+      font-size: 18px;
+      font-weight: 500;
+      
+      @include mobile {
+        display: block;
+      }
+    }
+  }
+
+  &--user {
+    @include mobile-large {
+      height: auto;
+    }
+    #{$root} {
+
+      &__container {
+        @include mobile-large {
+          flex-direction: column;
+          padding: 24px 0 0;
+        }
+      }
+
+      &__right {
+        @include mobile-large {
+          margin-top: 32px;
+          justify-content: space-between;
+        }
+
+        @include mobile {
+          justify-content: center;
+        }
+      }
+
+      &__notify {
+        @include mobile-large {
+          margin: 0;
+        }
+
+        @include mobile {
+          position: relative;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+        }
+      }
+
+      &__actions {
+        @include mobile-large {
+          padding-bottom: 16px;
+        }
+        @include mobile {
+          display: none;
+        }
+      }
+
+      &__notify-wrap {
+        @include mobile-large {
+          padding-bottom: 16px;
+        }
+      }
+
+      &__user {
+        @include mobile {
+          position: static;
+        }
+      }
+    }
+  }
+
+  &__container {
+    @include mobile {
+      padding: 24px 0 0;
+    }
+  }
+
   &__logo {
     max-height: 38px;
     width: auto;
@@ -9,11 +101,21 @@
 
   &__help {
     line-height: 32px;
+
+    @include tablet {
+      display: none;
+    }
   }
 
   &__right {
     align-self: stretch;
     align-items: center;
+    position: relative;
+
+    @include mobile {
+      margin-top: 32px;
+      justify-content: center;
+    }
   }
 
   &__notify-wrap {
@@ -21,6 +123,11 @@
     align-self: stretch;
     align-items: center;
     position: relative;
+
+    @include mobile {
+      position: static;
+      padding-bottom: 16px;
+    }
 
     &:hover {
       .cart-drop-down,
@@ -94,6 +201,11 @@
     align-items: center;
     align-self: stretch;
 
+    @include mobile-large {
+      padding-bottom: 16px;
+    }
+
+
     &:hover {
       .user-drop-down {
         display: block;
@@ -144,6 +256,10 @@
   &__actions {
     display: flex;
     margin: 0 -4px;
+
+    @include mobile {
+      padding-bottom: 16px;
+    }
 
     #{$root} {
       &__btn {

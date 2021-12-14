@@ -20,10 +20,15 @@
 </head>
 <body>
 <header>
-    <section class="header ">
-        <div class="container d-flex justify-content-between align-items-center">
-            <a href="#"><img src="img/foxtar-logo.png" alt="foxtar-logo"></a>
-            <!-- / logo-->
+    <section class="header header--user">
+        <div class="header__container container d-flex justify-content-between align-items-center">
+
+            <div class="header__mob-wrap">
+                <a href="#"><img src="img/foxtar-logo.png" alt="foxtar-logo"></a>
+                <!-- / logo-->
+                <a href="#" class="header__mob-logout link-decor-on-hover">Logout</a>
+            </div>
+
 
             <div class="header__right d-flex">
                 <p class="header__help">
@@ -207,8 +212,6 @@
                     <!--/header__user-->
                 </div>
                 <!--/header__notify-->
-
-
 
                 <div class="header__actions">
                     <a href="#" class="header__btn header__btn--register">Logout</a>
