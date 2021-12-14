@@ -1,4 +1,5 @@
 .welcome {
+  $root: &;
   background: url("../img/banner_image.jpg") no-repeat center / cover;
   display: flex;
   justify-content: center;
@@ -11,6 +12,22 @@
 
   @include mobile {
     height: 400px;
+  }
+
+  &--item {
+    height: 290px;
+
+    @include mobile-large {
+      height: 290px;
+    }
+
+    @include mobile {
+      height: 240px;
+    }
+
+    #{$root}__subtitle {
+      margin: 0 0 24px 0;
+    }
   }
 
   &__container {
