@@ -1,0 +1,14 @@
+.main {
+  background-color: #f4f6f5;
+
+  &__sidebar {
+    flex: 0 0 270px;
+    max-width: 270px;
+    padding-right: 30px;
+  }
+
+  &__content {
+
+  }
+
+}

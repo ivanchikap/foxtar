@@ -1,0 +1,44 @@
+.categories {
+  width: 100%;
+  border: 1px solid #d7d7d7;
+  background-color: #ffffff;
+  padding: 26px 28px;
+
+  &__title {
+    color: #263238;
+    font-size: 20px;
+    font-weight: 700;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #dde3e8;
+  }
+
+  &__list {
+    padding: 26px 0 16px 0;
+  }
+
+  &__list-item {
+    display: flex;
+    justify-content: space-between;
+
+    & + & {
+      margin-top: 28px;
+    }
+  }
+
+  &__link {
+    transition: color .3s ease-out;
+
+    &:hover {
+      color: $green;
+    }
+
+    &::before {
+      content: '\f105';
+      color: $green;
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      margin-right: 12px;
+      font-size: 14px;
+    }
+  }
+}
