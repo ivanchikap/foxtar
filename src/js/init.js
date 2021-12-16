@@ -20,10 +20,13 @@ $(function() {
                 items: 2
             },
             0: {
-                items: 1
+                 items: 1
             }
         }
     });
+
+    $('.upload-form select').styler();
+    $('.upload-form .upload-form__fileinput').styler();
 });
 
 

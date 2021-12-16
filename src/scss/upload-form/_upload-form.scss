@@ -1,0 +1,126 @@
+.upload-form {
+  border: 1px solid #d7d7d7;
+  background-color: #ffffff;
+  padding-bottom: 12px;
+
+  @include mobile-large {
+    padding-bottom: 0;
+  }
+
+  &__title {
+    color: #263238;
+    border-bottom: 1px solid #d7d7d7;;
+    font-size: 24px;
+    font-weight: 500;
+    padding: 20px 34px;
+
+    @include mobile {
+      font-size: 20px;
+    }
+  }
+
+  &__form-group {
+    padding: 42px 45px 50px;
+
+    @include mobile-large {
+      padding: 24px 24px 50px;
+    }
+
+    @include mobile {
+      padding: 24px 12px 24px;
+    }
+  }
+
+  &__input-group {
+    display: flex;
+    margin-bottom: 20px;
+
+    @include mobile-large {
+      flex-direction: column;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &--submit {
+      padding-left: 177px;
+      padding-top: 22px;
+
+      @include mobile-large {
+        padding-left: 0;
+        padding-top: 10px;
+      }
+
+    }
+  }
+
+  &__label {
+    width: 177px;
+    min-width: 177px;
+    color: #444444;
+    line-height: 40px;
+  }
+
+  &__mark {
+    color: $green;
+    font-size: 24px;
+    font-weight: 400;
+  }
+
+  &__text-input, &__textarea {
+    width: 100%;
+    padding: 0 20px;
+    height: 40px;
+    border: 1px solid #d7d7d7;
+    background-color: #f9f9f9;
+    color: #707070;
+    font-size: 15px;
+    font-weight: 400;
+    outline: none;
+
+    &::placeholder {
+      color: #707070;
+      font-size: 15px;
+      font-weight: 400;
+    }
+  }
+
+  &__select-text {
+    color: #707070;
+    font-size: 15px;
+    font-weight: 400;
+  }
+
+  &__textarea {
+    height: 150px;
+    resize: none;
+    padding: 14px 20px;
+  }
+
+  &__fileinput {
+    width: 100%;
+    outline: none;
+    box-shadow: none;
+  }
+
+  &__btn-submit {
+    max-width: 124px;
+    padding: 18px 38px;
+    background-color: $green;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+
+    @include  mobile-large {
+      max-width: 180px;
+    }
+
+    @include mobile {
+      max-width: 100%;
+    }
+  }
+}
