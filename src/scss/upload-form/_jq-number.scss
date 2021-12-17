@@ -1,0 +1,13 @@
+.jq-number {
+  &__spin {
+    display: none;
+  }
+  &__field {
+    border: none;
+    box-shadow: none;
+    outline: none;
+  }
+  &.focused &__field {
+    border: none;
+  }
+}

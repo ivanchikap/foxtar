@@ -27,6 +27,7 @@ $(function() {
 
     $('.upload-form select').styler();
     $('.upload-form .upload-form__fileinput').styler();
+    $('.upload-form .upload-form__text-input--number').styler();
 });
 
 
