@@ -39,6 +39,12 @@ $(function() {
         }, 100);
     }
 
+    if (document.querySelector('.product-price__select')) {
+        setTimeout(function() {
+            $('select').styler();
+        }, 100);
+    }
+
     if (document.querySelector('.js-range-slider')) {
         $(".js-range-slider").ionRangeSlider(
             {

@@ -1,0 +1,101 @@
+.product-price {
+  width: 100%;
+  border: 1px solid #d7d7d7;
+  background-color: #ffffff;
+  padding: 26px 30px;
+
+  &__title {
+    padding-bottom: 22px;
+    border-bottom: 1px solid #dde3e8;
+    color: #263238;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  &__price {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0 28px 0;
+  }
+
+  &__price-value {
+    color: $red;
+    font-size: 22px;
+    font-weight: 500;
+  }
+
+  .jq-selectbox {
+    width: 82px;
+
+    &__select {
+      //width: 82px;
+      height: 27px;
+      border: 1px solid #cccccc;
+      background: #fff;
+      //line-height: 1;
+      padding: 0 10px;
+      color: #70838d;
+      font-family: 'Roboto', sans-serif;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 27px;
+    }
+
+    &__trigger {
+      top: -5px;
+      right: -2px;
+    }
+
+    &__trigger-arrow {
+      border-top: 5px solid $green;
+    }
+
+    li {
+      font-size: 13px;
+      font-weight: 400;
+      color: #70838d;
+    }
+  }
+
+  &__btn {
+    width: 100%;
+    height: 48px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $dark-grey;
+    padding: 18px 22px;
+    box-shadow: 0 1px 2px rgba(69, 90, 100, 0.75);
+    transition: background-color .3s ease-out;
+
+    & + & {
+      margin-top: 7px;
+    }
+
+    &--green {
+      background-color: $green;
+
+      &:hover {
+        background-color: darken($green, 10);
+      }
+    }
+    &--blue {
+      background-color: #42a5f5;
+
+      &:hover {
+        background-color: darken(#42a5f5, 10);
+      }
+    }
+    &--dark-grey {
+      background-color: #546e7a;
+
+      &:hover {
+        background-color: darken(#546e7a, 10);
+      }
+    }
+  }
+}

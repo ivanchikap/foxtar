@@ -1,0 +1,13 @@
+.product {
+  padding-bottom: 122px;
+
+  &__content {
+    width: 100%;
+  }
+
+  &__sidebar {
+    flex: 0 0 300px;
+    min-width: 300px;
+    padding-left: 30px;
+  }
+}
