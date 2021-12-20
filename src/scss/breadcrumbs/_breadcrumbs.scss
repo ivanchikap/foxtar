@@ -1,0 +1,32 @@
+.breadcrumbs {
+  padding: 50px 0 40px 0;
+
+  &__item {
+    color: #263238;
+  }
+
+  &__link {
+    color: #b0bec5;
+    position: relative;
+    padding-right: 14px;
+    margin-right: 10px;
+    
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &::after {
+      display: block;
+      content: '-';
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+    }
+  }
+
+  &__label {
+
+  }
+
+}

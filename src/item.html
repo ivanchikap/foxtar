@@ -13,6 +13,8 @@
 
     <link rel="stylesheet" href="css/fontawesome.min.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <!--Plugin CSS file with desired skin-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"/>
     <link rel="stylesheet" href="css/et-line.css">
     <link rel="stylesheet" href="css/style.css">
 
@@ -263,13 +265,24 @@
 
     <div class="breadcrumbs">
         <div class="container">
-            Home - Product Page
+            <ul class="d-flex">
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="index.html">Home</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <span class="breadcrumbs__label">Product Page</span>
+                </li>
+            </ul>
         </div>
     </div>
+    <!--/breadcrumbs -->
 
     <div class="main__wrapper">
         <div class="container d-flex">
-            <div class="main__sidebar">
+            <div id="main__sidebar" class="main__sidebar">
+                <div class="main__sidebar-close" id="main__sidebar-close">
+                    <i class="fas fa-times"></i>
+                </div>
                 <section class="categories">
                     <h4 class="categories__title">Categories</h4>
                     <ul class="categories__list">
@@ -296,9 +309,16 @@
                     </ul>
                 </section>
                 <!--/categories-->
-                <section class="price">
+                <form class="price">
                     <h4 class="price__title">Price Range</h4>
-                </section>
+                    <div class="price__wrapper">
+                        <input type="text" class="js-range-slider" name="my_range" value="" />
+                    </div>
+                    <button type="submit" class="price__submit">
+                        <i class="fas fa-search"></i>
+                        <span>Search</span>
+                    </button>
+                </form>
                 <!--/price-->
                 <section class="sellers">
                     <h4 class="sellers__title">Top 10 Sellers</h4>
@@ -411,9 +431,12 @@
             <div class="main__content">
                 <div class="search d-flex justify-content-between">
                     <div class="search__sort">
+                        <span id="search__mobile-btn" class="search__mobile-btn">
+                            <i class="fas fa-bars"></i>
+                        </span>
                         <i class="fas fa-sort-amount-down"></i>
                         <span class="search__sort-text">Sort by: New Items</span>
-                        <i class="fas fa-sort"></i>
+                         <i class="fas fa-sort"></i>
                     </div>
                     <input class="search__input" type="text">
                     <div class="search__display">
@@ -421,6 +444,7 @@
                         <i class="fas fa-th-list"></i>
                     </div>
                 </div>
+                <!--/search-->
                 <div class="row">
                     <div class="col-4 col-lg-6 col-sm-12">
                         <div class="card">
@@ -855,12 +879,14 @@
                     </div>
                     <!--  /col-4-->
                 </div>
+                <!--/row-->
                 <div class="pages">
                     <div class="pages__item pages__item--active">1</div>
                     <div class="pages__item">2</div>
                     <div class="pages__item">3</div>
                     <div class="pages__item">4</div>
                 </div>
+                <!--/pages-->
             </div>
             <!--/content-->
         </div>
@@ -953,6 +979,9 @@
 
 <!--  carousel-->
 <script src="js/owl.carousel.min.js"></script>
+
+<!--Plugin JavaScript file-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
 
 <!-- nav scripts-->
 <script src="js/init.js"></script>

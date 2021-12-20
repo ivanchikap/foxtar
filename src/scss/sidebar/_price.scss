@@ -12,4 +12,61 @@
     padding-bottom: 18px;
     border-bottom: 1px solid #dde3e8;
   }
+
+  &__wrapper {
+    padding-bottom: 50px;
+    .irs-handle {
+      width: 16px;
+      height: 16px;
+      border: 3px solid $green;
+      background-color: #ffffff;
+      border-radius: 50%;
+      top: 30px;
+    }
+
+    .irs-line {
+      height: 5px;
+      border-radius: 5px;
+    }
+    .irs-bar {
+      height: 5px;
+      background-color: #37474f;
+    }
+
+    .irs-from, .irs-to, .irs-single {
+      top: 59px;
+      background: none;
+      color: #78909c;
+      font-family: 'Roboto', sans-serif;
+      font-size: 15px;
+      font-weight: 400;
+
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  &__submit {
+    height: 46px;
+    width: 100%;
+    background-color: $green;
+    text-align: center;
+    line-height: 46px;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    outline: none;
+    cursor: pointer;
+    transition: background-color .3s ease-out;
+
+    &:hover {
+      background-color: darken($green, 10);
+    }
+
+    i {
+      margin-right: 9px;
+    }
+  }
 }
