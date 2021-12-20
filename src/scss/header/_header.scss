@@ -257,6 +257,10 @@
     display: flex;
     margin: 0 -4px;
 
+    @include mobile-large {
+      margin: 0;
+    }
+
     @include mobile {
       padding-bottom: 16px;
     }

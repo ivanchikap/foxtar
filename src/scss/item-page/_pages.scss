@@ -1,0 +1,33 @@
+.pages {
+  margin-top: 60px;
+  display: flex;
+
+  @include mobile-large {
+    margin-top: 50px;
+  }
+  @include mobile {
+    margin-top: 40px;
+  }
+
+  &__item {
+    width: 43px;
+    height: 38px;
+    box-shadow: 0 1px 2px rgba(205, 214, 222, 0.75);
+    background-color: #ffffff;
+    color: #263238;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 38px;
+
+    & + & {
+      margin-left: 8px;
+    }
+
+    &--active {
+      box-shadow: 0 1px 2px rgba(205, 214, 222, 0.75);
+      background-color: $red;
+      color: #fff;
+    }
+  }
+}
