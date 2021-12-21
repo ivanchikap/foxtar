@@ -38,6 +38,13 @@
     margin-top: 38px;
   }
 
+  &__own-links {
+    width: 100%;
+    @include mobile {
+      flex-direction: column;
+    }
+  }
+
   &__own-link {
     padding: 0 24px;
     text-align: center;
@@ -47,10 +54,28 @@
     background-color: #707070;
     height: 50px;
     line-height: 50px;
+    white-space: nowrap;
     transition: background-color .3s ease-out;
+
+    @include laptop {
+      padding: 0 16px;
+    }
+
+    @include mobile {
+      width: 100%;
+    }
 
     & + & {
       margin-left: 18px;
+
+      @include laptop {
+        margin-left: 12px;
+      }
+
+      @include mobile {
+        margin-left: 0;
+        margin-top: 10px;
+      }
     }
 
     &--red {
@@ -78,6 +103,14 @@
     }
   }
 
+  &__social-links {
+
+    @include mobile {
+      justify-content: space-around;
+      width: 100%;
+    }
+  }
+
   &__social-link {
     width: 54px;
     height: 50px;
@@ -86,6 +119,10 @@
     font-size: 18px;
     line-height: 50px;
     text-align: center;
+
+    @include mobile-large {
+      margin-top: 14px;
+    }
 
     & + & {
       margin-left: 3px;

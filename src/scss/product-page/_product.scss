@@ -3,11 +3,29 @@
 
   &__content {
     width: 100%;
+
+    @include tablet {
+
+    }
   }
 
   &__sidebar {
     flex: 0 0 300px;
     min-width: 300px;
     padding-left: 30px;
+
+    @include laptop {
+      padding-left: 20px;
+      flex: 0 0 267px;
+      min-width: 267px;
+    }
+    @include tablet {
+      display: flex;
+      padding-left: 0;
+      margin-bottom: 30px;
+    }
+    @include mobile-large {
+      flex-direction: column;
+    }
   }
 }

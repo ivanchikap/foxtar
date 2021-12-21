@@ -1,7 +1,7 @@
 $(function() {
     $("#newest-tabs").tabs();
 
-    // $("#portfolio__tabs").tabs();
+    $("#product-tabs").tabs();
 
     $('#owl-carousel').owlCarousel({
         loop:true,

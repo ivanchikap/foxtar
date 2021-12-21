@@ -1,0 +1,39 @@
+.product-info {
+  width: 100%;
+  border: 1px solid #d7d7d7;
+  background-color: #ffffff;
+  padding: 26px 30px;
+  margin-top: 30px;
+
+  @include tablet {
+    display: none;
+  }
+
+  &__title {
+    padding-bottom: 22px;
+    border-bottom: 1px solid #dde3e8;
+    color: #263238;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  &__list {
+    padding-top: 24px;
+  }
+
+  &__list-item {
+    color: #70838d;
+    font-size: 14px;
+    line-height: 20px;
+
+    & + & {
+      margin-top: 24px;
+    }
+  }
+
+  &__determination {
+    color: #263238;
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
