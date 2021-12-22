@@ -3,7 +3,9 @@
   background-color: #ffffff;
 
   &__list {
-
+    @include mobile-large {
+      flex-wrap: wrap;
+    }
   }
 
   &__list-item {
@@ -15,6 +17,15 @@
     color: #70838d;
     font-size: 16px;
     font-weight: 400;
+
+    @include mobile-large {
+      width: 50%;
+    }
+
+    @include mobile {
+      height: 46px;
+      line-height: 44px;
+    }
 
     a {
       width: 100%;
@@ -29,6 +40,10 @@
 
   &__body {
     padding: 38px 36px 66px;
+
+    @include mobile {
+      padding: 18px 16px 26px;
+    }
   }
   &__body-list-item {
     color: #707070;

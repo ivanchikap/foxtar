@@ -1,12 +1,21 @@
 .product {
   padding-bottom: 122px;
 
+  @include laptop {
+     padding-bottom: 102px;
+  }
+  @include tablet {
+     padding-bottom: 82px;
+  }
+  @include mobile-large {
+     padding-bottom: 62px;
+  }
+  @include mobile {
+     padding-bottom: 42px;
+  }
+
   &__content {
     width: 100%;
-
-    @include tablet {
-
-    }
   }
 
   &__sidebar {
