@@ -25,6 +25,22 @@ $(function() {
         }
     });
 
+    if (document.querySelector('#modal')) {
+        $("#modal").iziModal({
+            width: 730,
+            radius: 0,
+            background: '#8bc34a'
+        });
+    }
+    $(document).on('click', '.login-form', function (event) {
+        event.preventDefault();
+        $('#modal').iziModal('open');
+    });
+    $(document).on('click', '.login__close', function (event) {
+        event.preventDefault();
+        $('#modal').iziModal('close');
+    });
+
     if(document.querySelector('.upload-form')) {
         setTimeout(function() {
             $('.upload-form select').styler();

@@ -14,12 +14,43 @@
     <link rel="stylesheet" href="css/fontawesome.min.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/et-line.css">
+    <link rel="stylesheet" href="css/izimodal.css">
     <link rel="stylesheet" href="css/style.css">
 
 <!--    <link type="image/png" rel="shortcut icon" href="img/logo16.ico">-->
 </head>
 <body>
     <header>
+
+        <!-- Modal structure -->
+        <div id="modal"> <!-- data-iziModal-fullscreen="true"  data-iziModal-title="Welcome"  data-iziModal-subtitle="Subtitle"  data-iziModal-icon="icon-home" -->
+            <div class="login">
+                <span class="login__close">
+                      <i class="fas fa-times"></i>
+                </span>
+
+                <h2 class="login__title">Login</h2>
+                <form action="#" class="login__form">
+                    <div class="login__input-group">
+                        <label for="input-user"> <i class="fas fa-user"></i></label>
+                        <input placeholder="Name" class="login__input" type="text" id="input-user">
+                    </div>
+                    <div class="login__input-group">
+                        <label for="input-pass"> <i class="fas fa-lock"></i></label>
+                        <input placeholder="Password" class="login__input" type="password" id="input-pass">
+                    </div>
+                    <div class="login__bottom">
+                        <button class="login__submit" type="submit">Submit</button>
+                        <a href="#" class="login__register">
+                            <i class="fas fa-edit"></i>
+                            <span class="login__reg-label">Create An Account?</span>
+                        </a>
+                    </div>
+                    <a href="#" class="login__lost-pass link-decor-on-hover">Lost Password?</a>
+                </form>
+            </div>
+        </div>
+
         <section class="header">
             <div class="header__container container d-flex justify-content-between align-items-center flex-xs-column">
                 <a href="#"><img src="img/foxtar-logo.png" alt="foxtar-logo"></a>
@@ -80,7 +111,7 @@
                     <!--/header__notify-->
 
                     <div class="header__actions">
-                        <a href="#" class="header__btn header__btn--login">Login</a>
+                        <a href="#" class="header__btn header__btn--login login-form">Login</a>
                         <a href="#" class="header__btn header__btn--register">Register</a>
                     </div>
                 </div>
@@ -1021,6 +1052,9 @@
 
     <!--  carousel-->
     <script src="js/owl.carousel.min.js"></script>
+
+    <!--    izimodal-->
+    <script src="js/izimodal.js"></script>
 
     <!-- nav scripts-->
     <script src="js/init.js"></script>
